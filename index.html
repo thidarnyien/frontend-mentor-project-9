@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      max-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: hsl(0, 0%, 98%);
+      color: hsl(234, 12%, 34%);
+    
+    }
+    p{
+      font-weight: 200;
+      opacity: .8;
+    }
+    h1{
+      font-weight: 200;
+    }
+    h2{
+      font-weight: 400;
+    }
+    .main-title{
+      font-weight: 600;
+    }
+    main{
+      margin: 100px 0;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .title{
+      max-width: 500px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .card-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cards{
+      max-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    @media(max-width:500px){
+      .card-container{
+        flex-direction: column;
+      }
+      .cards{
+        flex-direction: column;
+      }
+    }
+    .card{
+      max-width: 320px;
+      max-height: 220px;
+      margin: 10px;
+      padding: 30px;
+      padding-top: 25px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      overflow: hidden;
+      background-color: white;
+    }
+    .card>img{
+      margin-top: 20px;
+      float: right;
+      max-width: 100%;
+      object-fit: cover;
+    }
+    #card1{
+      border-top: 5px solid hsl(180, 62%, 55%);
+    }
+    #card2{
+      border-top: 5px solid hsl(0, 78%, 62%);
+    }
+    #card3{
+      border-top: 5px solid hsl(34, 97%, 64%);
+    }
+    #card4{
+      border-top: 5px solid hsl(212, 86%, 64%);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+ <main>
+  <section class="title">
+    <h1>Reliable, efficient delivery</h1>
+    <h1 class="main-title"> Powered by Technology</h1>
+    <p>Our Artificial Intelligence powered tools use millions of project data points 
+      to ensure that your project is successful</p>
+    
+  </section>
+
+  <section class="card-container">
+    <div class="card" id="card1">
+      <h2> Supervisor</h2>
+      <p>Monitors activity to identify project roadblocks</p>
+      <img src="./images/icon-supervisor.svg" alt="">
+    </div>
+  
+    <div class="cards">
+      <div class="card" id="card2">
+        <h2>  Team Builder</h2>
+        <p> Scans our talent network to create the optimal team for your project</p>
+        <img src="./images/icon-team-builder.svg" alt="">
+      </div>
+  
+      <div class="card" id="card3">
+        <h2>Karma</h2>
+      <p>Regularly evaluates our talent to ensure quality</p>
+      <img src="./images/icon-karma.svg" alt="">
+      </div>
+    </div>
+  
+    <div class="card" id="card4">
+      <h2>Calculator</h2>
+    <p>Uses data from past projects to provide better delivery estimates</p>
+    <img src="./images/icon-calculator.svg" alt="">
+    </div>
+  
+  </section>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/thidarnyien">Thidar Nyein</a>.
+    </p>
+  </footer>
+ </main>
+</body>
+</html>
